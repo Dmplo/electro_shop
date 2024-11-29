@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HON - Цифровой мир</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.5.1.1.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .white-back {
+            background: white !important;
+        }
+    </style>
+</head>
+<body>
+<header class="header-style-3">
+    <div class="menubox">
+        <div class="container-fluid">
+            <div class="row d-lg-none d-block">
+                <div class="mobile-menu ">
+                    <div class="mobile-menu__menu-top border-bottom-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="menu-info d-flex justify-content-between align-items-center">
+                                    <div class="menubar"><span></span> <span></span> <span></span></div>
+                                    <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-closer"></div>
+                    <div class="mobile-menu__sidebar-menu">
+                        <div class="menu-closer two"><span>Закрыть меню</span> <span class="cross"><i
+                                class="flaticon-cross"></i></span></div>
+                        <ul class="page-dropdown-menu">
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                   href="/products">Товары</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                   href="/employees">Сотрудники</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                   href="/shops">Магазины</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                   href="/purchases">Покупки</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                   href="/books">Справочник</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-block d-none pt-3">
+                <div class="row g-0 position-relative">
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center border-rit ">
+                        <div class="logo"><a href="/">
+                            <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 g-0 p-0">
+                        <div class="border-one"></div>
+                        <div class="row g-0 holder">
+                            <div class="col-12">
+                                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                                    <div class=" d-flex align-items-center justify-content-between ">
+                                        <nav>
+                                            <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/products">Товары</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/employees">Сотрудники</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/shops">Магазины</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/purchases">Покупки</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/books">Справочник</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sticy-header">
+        <div class="mobile-menu d-lg-none d-block">
+            <div class="mobile-menu__menu-top border-bottom-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="menu-info d-flex justify-content-between align-items-center">
+                            <div class="menubar"><span></span> <span></span> <span></span></div>
+                            <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative d-lg-block d-none">
+            <div class="d-flex align-items-center justify-content-between"><a href="/" class="logo me-2">
+                <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                    <div class="container ">
+                        <div class="row">
+                            <nav>
+                                <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                            href="/products">Товары</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                            href="/employees">Сотрудники</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                            href="/shops">Магазины</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                            href="/purchases">Покупки</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                            href="/books">Справочник</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-content-closer"></div>
+</header>
+<main class="overflow-hidden ">
+    <section class="contact-box pt-60 pb-60">
+        <div class="container">
+            <div class="section-header style3 text-center wow fadeInUp animated">
+                <h2 data-th-text="${employee.lastName + ' ' + employee.firstName + ' ' + employee.patronymic}"></h2>
+            </div>
+            <div class="row g-0 background align-items-center wow fadeInUp animated">
+                <div class="col-lg-5">
+                    <div class="map">
+                        <img data-th-src="'/images/' + ${employee.gender == 'М' ? 'male' : 'female'} + '.jpg'"
+                             class="first-img" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <h3>Личные данные</h3>
+                        <form method="post" data-th-action="@{/employees/edit/{employeeId}(employeeId=${employee.id})}" class="common-form">
+                            <input hidden="hidden" type="number" name="id" data-th-value="${employee.id}">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="lastName">Фамилия</label>
+                                        <input type="text" data-th-disabled="${!isEdit}" id="lastName" name="lastName"
+                                               data-th-class="${!isEdit ? 'form-control' : 'form-control white-back'}"
+                                               data-th-value="${payload != null && isEdit ? payload.lastName : employee.lastName}"
+                                               placeholder="Фамилия">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="firstName">Имя</label>
+                                        <input type="text" data-th-disabled="${!isEdit}" id="firstName" name="firstName"
+                                               data-th-class="${!isEdit ? 'form-control' : 'form-control white-back'}"
+                                               data-th-value="${payload != null && isEdit ? payload.firstName : employee.firstName}"
+                                               placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="patronymic">Отчество</label>
+                                        <input type="text" data-th-disabled="${!isEdit}" id="patronymic"
+                                               name="patronymic"
+                                               data-th-class="${!isEdit ? 'form-control' : 'form-control white-back'}"
+                                               data-th-value="${payload != null && isEdit ? payload.patronymic : employee.patronymic}"
+                                               placeholder="Отчество">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" th:if="${!isEdit}">
+                                    <div class="form-group">
+                                        <label for="gender">Пол</label>
+                                        <input type="text" disabled id="gender" name="gender" class="form-control"
+                                               data-th-value="${employee.gender}"
+                                               placeholder="Пол">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" th:if="${!isEdit}">
+                                    <div class="form-group">
+                                        <label for="position">Должность</label>
+                                        <input type="text" disabled id="position" name="position" class="form-control"
+                                               data-th-value="${employee.positionName}"
+                                               placeholder="Должность">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" th:if="${!isEdit}">
+                                    <div class="form-group">
+                                        <label for="shop">Магазин</label>
+                                        <input type="text" data-th-disabled="${!isEdit}" id="shop" name="shop"
+                                               class="form-control" data-th-value="${employee.shopName}"
+                                               placeholder="Магазин">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" th:if="${isEdit}">
+                                    <div class="form-group">
+                                        <p>Пол</p>
+                                        <div class="form-control-custom">
+                                            <select class="select-custom" name="gender">
+                                                <option value="true"
+                                                        data-th-selected="${payload != null ? payload.gender == 'М' : employee.gender == 'М'}">М
+                                                </option>
+                                                <option value="false"
+                                                        data-th-selected="${payload != null ? payload.gender == 'Ж' : employee.gender == 'Ж'}">Ж
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" th:if="${isEdit}">
+                                    <div class="form-group">
+                                        <p>Должность</p>
+                                        <div class="form-control-custom">
+                                            <select class="select-custom" name="positionId">
+                                                <option data-th-each="position : ${positions}"
+                                                        data-th-value="${position.id}"
+                                                        data-th-selected="${payload != null ? position.id == payload.positionId : position.id == employee.positionId}"
+                                                        data-th-text="${position.name}">
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" th:if="${isEdit}">
+                                    <div class="form-group">
+                                        <p>Магазин</p>
+                                        <div class="form-control-custom">
+                                            <select class="select-custom" name="shopId">
+                                                <option data-th-each="shop : ${shops}"
+                                                        data-th-value="${shop.id}"
+                                                        data-th-selected="${payload != null ? shop.id == payload.shopId : shop.id == employee.shopId}"
+                                                        data-th-text="${shop.name}">
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display:flex;justify-content:space-between" th:if="${isEdit}">
+                            <button style="width:130px" type="submit" class="btn--primary style2">Сохранить</button>
+                            <button style="width:130px" class="btn--primary style2">
+                                <a style="all: unset;cursor:pointer"
+                                   data-th-href="@{/employees/{employeeId}(employeeId=${employee.id})}">Отмена
+                                </a>
+                            </button></div>
+                            <div class="mt-30" data-th-if="${errors}">
+                                <h2 style="color:#dc3545;">Допущены ошибки</h2>
+                                <ul>
+                                    <li style="color:#dc3545;" data-th-each="error: ${errors}" data-th-text="${error}"></li>
+                                </ul>
+                            </div>
+                        </form>
+                        <a style="width:230px;margin-top:20px;" th:if="${!isEdit}"
+                           data-th-href="@{/employees/edit/{employeeId}(employeeId=${employee.id})}"
+                           class="btn--primary style2">Редактировать профиль</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer-default footer-3 mt-30">
+    <div class="footer_bottom position-relative">
+        <div class="copyright wow fadeInUp animated" style="display: flex;justify-content: center;">
+            <p>Дмитрий Плотников - dmplo@mail.ru - 2024</p>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/jqurey.v3.6.0.min.js"></script>
+<script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

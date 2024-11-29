@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HON - Цифровой мир</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.5.1.1.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="shoe">
+<header class="header-style-3">
+    <div class="menubox">
+        <div class="container-fluid">
+            <div class="row d-lg-none d-block">
+                <div class="mobile-menu ">
+                    <div class="mobile-menu__menu-top border-bottom-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="menu-info d-flex justify-content-between align-items-center">
+                                    <div class="menubar"><span></span> <span></span> <span></span></div>
+                                    <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-closer"></div>
+                    <div class="mobile-menu__sidebar-menu">
+                        <div class="menu-closer two"><span>Закрыть меню</span> <span class="cross"><i
+                                class="flaticon-cross"></i></span></div>
+                        <ul class="page-dropdown-menu">
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                   href="/products">Товары</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                   href="/employees">Сотрудники</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                   href="/shops">Магазины</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                   href="/purchases">Покупки</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                   href="/books">Справочник</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-block d-none pt-3">
+                <div class="row g-0 position-relative">
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center border-rit ">
+                        <div class="logo"><a href="/">
+                            <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 g-0 p-0">
+                        <div class="border-one"></div>
+                        <div class="row g-0 holder">
+                            <div class="col-12">
+                                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                                    <div class=" d-flex align-items-center justify-content-between ">
+                                        <nav>
+                                            <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/products">Товары</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/employees">Сотрудники</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/shops">Магазины</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/purchases">Покупки</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/books">Справочник</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sticy-header">
+        <div class="mobile-menu d-lg-none d-block">
+            <div class="mobile-menu__menu-top border-bottom-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="menu-info d-flex justify-content-between align-items-center">
+                            <div class="menubar"><span></span> <span></span> <span></span></div>
+                            <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative d-lg-block d-none">
+            <div class="d-flex align-items-center justify-content-between"><a href="/" class="logo me-2">
+                <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                    <div class="container ">
+                        <div class="row">
+                            <nav>
+                                <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                            href="/products">Товары</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                            href="/employees">Сотрудники</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                            href="/shops">Магазины</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                            href="/purchases">Покупки</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                            href="/books">Справочник</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-content-closer"></div>
+</header>
+<main class="overflow-hidden ">
+    <section class="about pt-30 pb-30" th:if="${isNotUpload != null and isNotUpload}">
+        <div class="container">
+            <div class="row g-0 about__background align-items-center justify-content-lg-between justify-content-center">
+                <div class="col-lg-5 col-10 wow fadeInLeft animated ">
+                    <div class="about__img">
+                        <div class="about__img-inner">
+                            <img src="/images/shop.jpg" alt=""/></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-11">
+                    <div class="about__content text-center">
+                        <div class="shape1"><img src="assets/images/shape/about-v1-shape1.png" alt=""/></div>
+                        <div class="shape2"><img src="assets/images/shape/about-v1-shape2.png" alt=""/></div>
+                        <div class="wow fadeInUp animated">
+                            <h2>Добро пожаловать в систему контроля деятельности магазинов!</h2>
+                        </div>
+
+                        <div class="text wow fadeInUp animated">
+                            <p>К сожалению данных в системе пока нет, но выможете загрузить их начав миграцию.
+                                Для этого загрузите zip-архив с данными и нажмите кнопку 'Запустить миграцию'
+                            </p>
+                        </div>
+
+                        <a style="width:220px;margin-top: 10px" href="/" class="btn--primary style2">Перейти к
+                            миграции</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section th:if="${isNotUpload != null and !isNotUpload}" class="my-account-page pt-30 pb-120">
+        <div class="container">
+            <div class="row wow fadeInUp animated">
+                <div class="section-header style3 text-center wow fadeInUp animated">
+                    <h2>Справочная информация</h2>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="d-flex align-items-start">
+                        <div class="nav my-account-page__menu flex-column nav-pills me-3" id="v-pills-tab"
+                             role="tablist" aria-orientation="vertical">
+                            <button data-th-each="section : ${sections}"
+                                    data-th-class="${(param.section == null and #strings.equals(section.tableName, 'positions')) or (param.section != null and #arrays.contains(param.section, section.tableName)) ? 'nav-link active' : 'nav-link'}">
+                                <a style="all: unset;"
+                                   data-th-text="${section.sectionName + ' ' + '(' + section.count + ')'}"
+                                   data-th-href="@{/books(section=${section.tableName})}">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tab-content " id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel"
+                             aria-labelledby="v-pills-dashboard-tab">
+                            <div class="tabs-content__single">
+                                <table class="compare-table">
+                                    <thead class="compare-header">
+                                    <tr>
+                                        <th>
+                                            <h5><b>Наименование</b></h5>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr data-th-each="item : ${content}">
+                                        <td>
+                                            <p data-th-text="${item.name}"></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer-default footer-3 mt-120">
+    <div class="footer_bottom position-relative">
+        <div class="copyright wow fadeInUp animated" style="display: flex;justify-content: center;">
+            <p>Дмитрий Плотников - dmplo@mail.ru - 2024</p>
+        </div>
+    </div>
+</footer>
+<script th:inline="javascript">
+    let start = document.getElementById(`start`)
+
+    if (start) {
+        start.addEventListener('click', (el) => {
+            console.log(el);
+            el.target.classList.add('disabled')
+            let cancel = document.getElementById(`back`)
+            if (cancel) {
+                cancel.classList.add('disabled')
+            }
+        })
+    }
+</script>
+<script src="assets/js/jqurey.v3.6.0.min.js"></script>
+<script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

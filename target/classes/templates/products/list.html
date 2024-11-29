@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HON - Цифровой мир</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.5.1.1.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="shoe">
+<header class="header-style-3">
+    <div class="menubox">
+        <div class="container-fluid">
+            <div class="row d-lg-none d-block">
+                <div class="mobile-menu ">
+                    <div class="mobile-menu__menu-top border-bottom-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="menu-info d-flex justify-content-between align-items-center">
+                                    <div class="menubar"><span></span> <span></span> <span></span></div>
+                                    <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-closer"></div>
+                    <div class="mobile-menu__sidebar-menu">
+                        <div class="menu-closer two"><span>Закрыть меню</span> <span class="cross"><i
+                                class="flaticon-cross"></i></span></div>
+                        <ul class="page-dropdown-menu">
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                   href="/products">Товары</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                   href="/employees">Сотрудники</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                   href="/shops">Магазины</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                   href="/purchases">Покупки</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                   href="/books">Справочник</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-block d-none pt-3">
+                <div class="row g-0 position-relative">
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center border-rit ">
+                        <div class="logo"><a href="/">
+                            <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 g-0 p-0">
+                        <div class="border-one"></div>
+                        <div class="row g-0 holder">
+                            <div class="col-12">
+                                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                                    <div class=" d-flex align-items-center justify-content-between ">
+                                        <nav>
+                                            <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/products">Товары</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/employees">Сотрудники</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/shops">Магазины</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/purchases">Покупки</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/books">Справочник</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sticy-header">
+        <div class="mobile-menu d-lg-none d-block">
+            <div class="mobile-menu__menu-top border-bottom-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="menu-info d-flex justify-content-between align-items-center">
+                            <div class="menubar"><span></span> <span></span> <span></span></div>
+                            <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative d-lg-block d-none">
+            <div class="d-flex align-items-center justify-content-between"><a href="/" class="logo me-2">
+                <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                    <div class="container ">
+                        <div class="row">
+                            <nav>
+                                <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                            href="/products">Товары</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                            href="/employees">Сотрудники</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                            href="/shops">Магазины</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                            href="/purchases">Покупки</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                            href="/books">Справочник</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-content-closer"></div>
+</header>
+<main class="overflow-hidden">
+    <section class="about pt-30 pb-30" th:if="${isNotUpload != null and isNotUpload}">
+        <div class="container">
+            <div class="row g-0 about__background align-items-center justify-content-lg-between justify-content-center">
+                <div class="col-lg-5 col-10 wow fadeInLeft animated ">
+                    <div class="about__img">
+                        <div class="about__img-inner">
+                            <img src="/images/shop.jpg" alt=""/></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-11">
+                    <div class="about__content text-center">
+                        <div class="shape1"><img src="assets/images/shape/about-v1-shape1.png" alt=""/></div>
+                        <div class="shape2"><img src="assets/images/shape/about-v1-shape2.png" alt=""/></div>
+                        <div class="wow fadeInUp animated">
+                            <h2>Добро пожаловать в систему контроля деятельности магазинов!</h2>
+                        </div>
+
+                        <div class="text wow fadeInUp animated">
+                            <p>К сожалению данных в системе пока нет, но выможете загрузить их начав миграцию.
+                                Для этого загрузите zip-архив с данными и нажмите кнопку 'Запустить миграцию'
+                            </p>
+                        </div>
+
+                        <a style="width:220px;margin-top: 10px" href="/" class="btn--primary style2">Перейти к
+                            миграции</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section th:if="${isNotUpload != null and !isNotUpload}" class="categories-tab pt-60 pb-30 wow fadeInUp">
+        <div class="container auto-container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav three nav-pills justify-content-center" id="pills-tab-two" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button data-th-class="${activeId == null ? 'nav-link active' : 'nav-link'}"
+                                    data-bs-toggle="pill" type="button" role="tab"
+                                    data-th-aria-selected="${activeId == null ? true : false}">
+                                <a style="all: unset;" data-th-href="@{/products}">Все типы</a>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation" data-th-each="type : ${types}">
+                            <button data-th-class="${type.id == activeId ? 'nav-link active' : 'nav-link'}"
+                                    data-bs-toggle="pill" type="button" role="tab"
+                                    data-th-aria-selected="${type.id == activeId ? true : false}">
+                                <a style="all: unset;" data-th-text="${type.name}"
+                                   data-th-href="@{/products(type=${type.id})}"></a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section th:if="${isNotUpload != null and !isNotUpload}" class="products-three pb-30 overflow-hidden">
+        <div class="auto-container container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="products-three__inner">
+                        <ul id="body-ul">
+                            <li data-th-each="product : ${products}"
+                                class="products-three-single wow fadeInUp animated">
+                                <div class="products-three-single-img">
+                                    <a data-th-href="@{/products/{productId}(productId=${product.id})}" class="d-block">
+                                        <img src="/images/empty.jpg" class="first-img" alt=""/>
+                                        <img src="/images/empty.jpg" alt="" class="hover-img"/>
+                                    </a>
+                                </div>
+                                <div class="products-three-single-content text-center">
+                                    <h5><a data-th-href="@{/products/{productId}(productId=${product.id})}"
+                                           data-th-text="${product.name}"></a></h5>
+                                    <p data-th-text="${'Количество: ' +  product.count + ' шт'}"></p>
+                                    <p>[[${#numbers.formatInteger(product.price,3,'WHITESPACE')}]] ₽</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer-default footer-3 mt-30">
+    <div class="footer_bottom position-relative">
+        <div class="copyright wow fadeInUp animated" style="display: flex;justify-content: center;">
+            <p>Дмитрий Плотников - dmplo@mail.ru - 2024</p>
+        </div>
+    </div>
+</footer>
+<script th:inline="javascript">
+    let currentPage = [[${currentPage}]];
+    let totalPages = [[${totalPages}]];
+    let loadPage = false;
+
+    window.onscroll = () => {
+        const el = document.documentElement
+        let body = document.body,
+            html = document.documentElement;
+        let height = Math.max(body.scrollHeight, body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const isBottomOfScreen = el.scrollTop + window.innerHeight >= height * 0.75
+        if (isBottomOfScreen && !loadPage) {
+            loadPageActionProducts()
+        }
+    }
+
+    function prepareUrl() {
+        const reg = /page+\=([0-9]+)/gi;
+        let page = `page=${currentPage + 1}`
+        let currentLocation = window.location
+        let url
+        if (!currentLocation.search) {
+            url = `${currentLocation.pathname}/pageable?${page}`
+        } else {
+            if (currentLocation.search.match(reg) !== null) {
+                url = `${currentLocation.pathname}/pageable${currentLocation.search.replace(reg, `${page}`)}`
+            } else {
+                url = `${currentLocation.pathname}/pageable${currentLocation.search}&${page}`
+            }
+        }
+        return url
+    }
+
+    async function loadPageActionProducts() {
+        if ((currentPage + 1 < totalPages) && !loadPage) {
+
+            let url = prepareUrl()
+            loadPage = true
+            send(url).then(response => {
+                fillTable(response)
+            });
+        }
+    }
+
+    function fillTable(response) {
+        currentPage = response.currentPage
+        totalPages = response.totalPages
+        let content = ''
+        response.list.forEach(product => {
+            content += `
+             <li class="products-three-single wow fadeInUp animated">
+                                <div class="products-three-single-img">
+                                    <a href="/products/${product.id}" class="d-block">
+                                        <img src="/images/empty.jpg" class="first-img" alt=""/>
+                                        <img src="/images/empty.jpg" alt="" class="hover-img"/>
+                                    </a>
+                                </div>
+                                <div class="products-three-single-content text-center">
+                                    <h5><a href="/products/${product.id}">${product.name}</a></h5>
+                                    <p>Количество: ${product.count} шт</p>
+                                    <p>${product.price.toLocaleString()} ₽</p>
+                                </div>
+                            </li>
+    `
+        })
+        document.getElementById(`body-ul`).insertAdjacentHTML("beforeend", content);
+        setTimeout(() => {
+            loadPage = false
+        }, 1000);
+    }
+
+    async function send(url) {
+        try {
+            const response = await fetch(url)
+            return await response.json()
+        } catch (error) {
+            showError(error)
+        }
+    }
+
+    function showError(error) {
+        console.log(error);
+    }
+
+</script>
+<script src="assets/js/jqurey.v3.6.0.min.js"></script>
+<script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

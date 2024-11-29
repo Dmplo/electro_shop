@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: shop-page
+shop:
+  rest:
+    url: lb://shop-rest
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

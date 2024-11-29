@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HON - Цифровой мир</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.5.1.1.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .white-back {
+            background: white !important;
+        }
+    </style>
+</head>
+<body>
+<header class="header-style-3">
+    <div class="menubox">
+        <div class="container-fluid">
+            <div class="row d-lg-none d-block">
+                <div class="mobile-menu ">
+                    <div class="mobile-menu__menu-top border-bottom-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="menu-info d-flex justify-content-between align-items-center">
+                                    <div class="menubar"><span></span> <span></span> <span></span></div>
+                                    <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-closer"></div>
+                    <div class="mobile-menu__sidebar-menu">
+                        <div class="menu-closer two"><span>Закрыть меню</span> <span class="cross"><i
+                                class="flaticon-cross"></i></span></div>
+                        <ul class="page-dropdown-menu">
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                   href="/products">Товары</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                   href="/employees">Сотрудники</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                   href="/shops">Магазины</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                   href="/purchases">Покупки</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                   href="/books">Справочник</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-block d-none pt-3">
+                <div class="row g-0 position-relative">
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center border-rit ">
+                        <div class="logo"><a href="/">
+                            <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 g-0 p-0">
+                        <div class="border-one"></div>
+                        <div class="row g-0 holder">
+                            <div class="col-12">
+                                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                                    <div class=" d-flex align-items-center justify-content-between ">
+                                        <nav>
+                                            <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/products">Товары</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/employees">Сотрудники</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/shops">Магазины</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/purchases">Покупки</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/books">Справочник</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sticy-header">
+        <div class="mobile-menu d-lg-none d-block">
+            <div class="mobile-menu__menu-top border-bottom-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="menu-info d-flex justify-content-between align-items-center">
+                            <div class="menubar"><span></span> <span></span> <span></span></div>
+                            <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative d-lg-block d-none">
+            <div class="d-flex align-items-center justify-content-between"><a href="/" class="logo me-2">
+                <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                    <div class="container ">
+                        <div class="row">
+                            <nav>
+                                <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                            href="/products">Товары</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                            href="/employees">Сотрудники</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                            href="/shops">Магазины</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                            href="/purchases">Покупки</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                            href="/books">Справочник</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-content-closer"></div>
+</header>
+<main class="overflow-hidden ">
+    <section class="contact-box pt-60 pb-60">
+        <div class="container">
+            <div class="section-header style3 text-center wow fadeInUp animated">
+                <h2 data-th-text="${shop.name}"></h2>
+            </div>
+            <div class="row g-0 background align-items-center wow fadeInUp animated">
+                <div class="col-lg-5">
+                    <div class="map">
+                        <img data-th-src="'/images/facade.jpg'" class="first-img" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <h3>Информация:</h3>
+                        <form method="post" data-th-action="@{/shops/edit/{shopId}(shopId=${shop.id})}" class="common-form">
+                            <input hidden="hidden" type="number" name="id" data-th-value="${shop.id}">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="name">Наименование</label>
+                                        <input type="text" data-th-disabled="${!isEdit}" id="name" name="name"
+                                               data-th-class="${!isEdit ? 'form-control' : 'form-control white-back'}"
+                                               data-th-value="${payload != null && isEdit ? payload.name : shop.name}"
+                                               placeholder="Наименование">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="address">Адрес</label>
+                                        <input type="text" data-th-disabled="${!isEdit}" id="address" name="address"
+                                               data-th-class="${!isEdit ? 'form-control' : 'form-control white-back'}"
+                                               data-th-value="${payload != null && isEdit ? payload.address : shop.address}"
+                                               placeholder="Адрес">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display:flex;justify-content:space-between" th:if="${isEdit}">
+                            <button style="width:130px" type="submit" class="btn--primary style2">Сохранить</button>
+                            <button style="width:130px" class="btn--primary style2">
+                                <a style="all: unset;cursor:pointer"
+                                   data-th-href="@{/shops/{shopId}(shopId=${shop.id})}">Отмена
+                                </a>
+                            </button></div>
+                            <div class="mt-30" data-th-if="${errors}">
+                                <h2 style="color:#dc3545;">Допущены ошибки</h2>
+                                <ul>
+                                    <li style="color:#dc3545;" data-th-each="error: ${errors}" data-th-text="${error}"></li>
+                                </ul>
+                            </div>
+                        </form>
+                        <a style="width:222px;margin-top:20px;" th:if="${!isEdit}"
+                           data-th-href="@{/shops/edit/{shopId}(shopId=${shop.id})}"
+                           class="btn--primary style2">Редактировать магазин</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer-default footer-3 mt-30">
+    <div class="footer_bottom position-relative">
+        <div class="copyright wow fadeInUp animated" style="display: flex;justify-content: center;">
+            <p>Дмитрий Плотников - dmplo@mail.ru - 2024</p>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/jqurey.v3.6.0.min.js"></script>
+<script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

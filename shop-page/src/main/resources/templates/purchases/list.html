@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HON - Цифровой мир</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.5.1.1.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="shoe">
+<header class="header-style-3">
+    <div class="menubox">
+        <div class="container-fluid">
+            <div class="row d-lg-none d-block">
+                <div class="mobile-menu ">
+                    <div class="mobile-menu__menu-top border-bottom-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="menu-info d-flex justify-content-between align-items-center">
+                                    <div class="menubar"><span></span> <span></span> <span></span></div>
+                                    <a href="/" class="logo"> <img style="height: 65px;width: 145px;"
+                                                                   src="/images/logo.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-closer"></div>
+                    <div class="mobile-menu__sidebar-menu">
+                        <div class="menu-closer two"><span>Закрыть меню</span> <span class="cross"><i
+                                class="flaticon-cross"></i></span></div>
+                        <ul class="page-dropdown-menu">
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                   href="/products">Товары</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                   href="/employees">Сотрудники</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                   href="/shops">Магазины</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                   href="/purchases">Покупки</a></li>
+                            <li>
+                                <a data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                   href="/books">Справочник</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-block d-none pt-3">
+                <div class="row g-0 position-relative">
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center border-rit ">
+                        <div class="logo"><a href="/">
+                            <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 g-0 p-0">
+                        <div class="border-one"></div>
+                        <div class="row g-0 holder">
+                            <div class="col-12">
+                                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                                    <div class=" d-flex align-items-center justify-content-between ">
+                                        <nav>
+                                            <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/products">Товары</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/employees">Сотрудники</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/shops">Магазины</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/purchases">Покупки</a></li>
+                                                <li class="dropdown-list"><a
+                                                        data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                                        href="/books">Справочник</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sticy-header">
+        <div class="mobile-menu d-lg-none d-block">
+            <div class="mobile-menu__menu-top border-bottom-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="menu-info d-flex justify-content-between align-items-center">
+                            <div class="menubar"><span></span> <span></span> <span></span></div>
+                            <a href="/" class="logo"> <img style="height: 65px;width: 145px;" src="/images/logo.jpg"
+                                                           alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative d-lg-block d-none">
+            <div class="d-flex align-items-center justify-content-between"><a href="/" class="logo me-2">
+                <img style="height: 65px;width: 145px;" src="/images/logo.jpg" alt=""> </a>
+                <div class="mega-menu-default mega-menu d-lg-block d-none">
+                    <div class="container ">
+                        <div class="row">
+                            <nav>
+                                <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'products') ? 'color: orange;' : 'color: black;'}"
+                                            href="/products">Товары</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'employees') ? 'color: orange;' : 'color: black;'}"
+                                            href="/employees">Сотрудники</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'shops') ? 'color: orange;' : 'color: black;'}"
+                                            href="/shops">Магазины</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'purchases') ? 'color: orange;' : 'color: black;'}"
+                                            href="/purchases">Покупки</a></li>
+                                    <li class="dropdown-list"><a
+                                            data-th-style="${pageName != null and #strings.equals(pageName, 'books') ? 'color: orange;' : 'color: black;'}"
+                                            href="/books">Справочник</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-content-closer"></div>
+</header>
+<main class="overflow-hidden ">
+    <section class="about pt-30 pb-30" th:if="${isNotUpload != null and isNotUpload}">
+        <div class="container">
+            <div class="row g-0 about__background align-items-center justify-content-lg-between justify-content-center">
+                <div class="col-lg-5 col-10 wow fadeInLeft animated ">
+                    <div class="about__img">
+                        <div class="about__img-inner">
+                            <img src="/images/shop.jpg" alt=""/></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-11">
+                    <div class="about__content text-center">
+                        <div class="shape1"><img src="assets/images/shape/about-v1-shape1.png" alt=""/></div>
+                        <div class="shape2"><img src="assets/images/shape/about-v1-shape2.png" alt=""/></div>
+                        <div class="wow fadeInUp animated">
+                            <h2>Добро пожаловать в систему контроля деятельности магазинов!</h2>
+                        </div>
+                        <div class="text wow fadeInUp animated">
+                            <p>К сожалению данных в системе пока нет, но выможете загрузить их начав миграцию.
+                                Для этого загрузите zip-архив с данными и нажмите кнопку 'Запустить миграцию'
+                            </p>
+                        </div>
+                        <a style="width:220px;margin-top: 10px" href="/" class="btn--primary style2">Перейти к
+                            миграции</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div th:if="${isNotUpload != null and !isNotUpload}" class="product-grid pt-30 pb-120">
+        <div class="container">
+            <div class="row gx-4">
+                <div class="section-header style3 text-center wow fadeInUp animated">
+                    <h2>Статистика</h2>
+                </div>
+                <div class="col-xl-2 col-lg-4">
+                    <div class="shop-grid-sidebar">
+                        <a style="width:130px" data-th-href="@{/purchases}" class="btn--primary style2">Сбросить</a>
+                        <div class="sidebar-holder">
+                            <form method="get" data-th-action="@{/purchases}">
+                                <button style="width:130px" type="submit" class="btn--primary style2">Применить</button>
+                                <div style="padding-bottom:10px;margin-top: 20px"
+                                     class="single-sidebar-box wow fadeInUp animated">
+                                    <h4 style="padding-bottom:20px">Вид отчета</h4>
+                                    <div class="checkbox-item">
+                                        <div class="form-group">
+                                            <input type="radio" name="report" data-th-id="all"
+                                                   data-th-checked="${param.report == null or ((param.report != null) and
+                                                    #arrays.contains(param.report, 'all'))}"
+                                                   value="all">
+                                            <label data-th-for="all">Обший</label>
+                                            <input type="radio" name="report" data-th-id="shop-rating"
+                                                   data-th-checked="${(param.report != null) and
+                                                    #arrays.contains(param.report, 'shop-rating')}"
+                                                   value="shop-rating">
+                                            <label data-th-for="shop-rating">Рейтинг магазинов</label>
+                                            <input type="radio" name="report" data-th-id="rating"
+                                                   data-th-checked="${(param.report != null) and
+                                                    #arrays.contains(param.report, 'rating')}"
+                                                   value="rating">
+                                            <label data-th-for="rating">Рейтинг сотрудников</label>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <div class="sellect-box">
+                                                        <select class="rating-select"
+                                                                style="border: 1px solid black;margin-top: 10px;"
+                                                                name="view"
+                                                                data-th-disabled="${(param.report == null) or #arrays.contains(param.report, 'all')}">
+                                                            <option disabled>Тип рейтинга</option>
+                                                            <option value="amount"
+                                                                    data-th-selected="${param.view == null or ((param.view != null) and #arrays.contains(param.view, 'amount'))}">
+                                                                Сумма
+                                                            </option>
+                                                            <option value="count"
+                                                                    data-th-selected="${(param.view != null) and #arrays.contains(param.view, 'count')}">
+                                                                Количество
+                                                            </option>
+                                                        </select></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding-bottom:10px;margin-top: 10px"
+                                     class="single-sidebar-box wow fadeInUp animated">
+                                    <h4 style="padding-bottom:20px">Год</h4>
+                                    <div class="checkbox-item">
+                                        <div data-th-each="year : ${years}" class="form-group">
+                                            <input type="checkbox" name="year" data-th-id="${year}"
+                                                   data-th-checked="${(param.year != null) and
+                                                    #arrays.contains(param.year, year)}"
+                                                   data-th-value="${year}">
+                                            <label data-th-for="${year}" data-th-text="${year}"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding-bottom:10px;margin-top: 10px"
+                                     class="single-sidebar-box wow fadeInUp animated">
+                                    <h4 style="padding-bottom:20px">Категория</h4>
+                                    <div class="checkbox-item">
+                                        <div data-th-each="type : ${types}" class="form-group">
+                                            <input type="checkbox" name="type" data-th-id="${'type' + type.id}"
+                                                   data-th-checked="${(param.type != null) and
+                                                    #arrays.contains(param.type, #strings.toString(type.id))}"
+                                                   data-th-value="${type.id}">
+                                            <label data-th-for="${'type' + type.id}"
+                                                   data-th-text="${type.name}"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding-bottom:10px;margin-top: 10px"
+                                     class="single-sidebar-box wow fadeInUp animated">
+                                    <h4 style="padding-bottom:20px">Магазин</h4>
+                                    <div class="checkbox-item">
+                                        <div data-th-each="shop : ${shops}" class="form-group">
+                                            <input type="checkbox" name="shop" data-th-id="${'shop' + shop.id}"
+                                                   data-th-checked="${(param.shop != null) and
+                                                    #arrays.contains(param.shop, #strings.toString(shop.id))}"
+                                                   data-th-value="${shop.id}">
+                                            <label data-th-for="${'shop' + shop.id}"
+                                                   data-th-text="${shop.name}"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding-bottom:10px;margin-top: 10px"
+                                     class="single-sidebar-box wow fadeInUp animated">
+                                    <h4 style="padding-bottom:20px">Должность</h4>
+                                    <div class="checkbox-item">
+                                        <div data-th-each="position : ${positions}" class="form-group"
+                                             data-th-style="${param.report != null and #arrays.contains(param.report, 'shop-rating') ? 'background-color: lightgray;' : 'background-color: white;'}">
+                                            <input class="position-input" type="checkbox" name="position"
+                                                   data-th-disabled="${param.report != null and #arrays.contains(param.report, 'shop-rating')}"
+                                                   data-th-id="${'position' + position.id}"
+                                                   data-th-checked="${(param.position != null) and not (param.report != null and #arrays.contains(param.report, 'shop-rating')) and
+                                                    #arrays.contains(param.position, #strings.toString(position.id))}"
+                                                   data-th-value="${position.id}">
+                                            <label data-th-for="${'position' + position.id}"
+                                                   data-th-text="${position.name}"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding-bottom:10px;margin-top: 10px"
+                                     class="single-sidebar-box wow fadeInUp animated">
+                                    <h4 style="padding-bottom:20px">Тип оплаты</h4>
+                                    <div class="checkbox-item">
+                                        <div data-th-each="pay : ${pays}" class="form-group">
+                                            <input type="checkbox" name="pay" data-th-id="${'pay' + pay.id}"
+                                                   data-th-checked="${(param.pay != null) and
+                                                    #arrays.contains(param.pay, #strings.toString(pay.id))}"
+                                                   data-th-value="${pay.id}">
+                                            <label data-th-for="${'pay' + pay.id}" data-th-text="${pay.name}"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button style="width:130px;margin-top:15px;" type="submit" class="btn--primary style2">
+                                    Применить
+                                </button>
+                            </form>
+                            <a style="width:130px; margin-top: 10px" data-th-href="@{/purchases}"
+                               class="btn--primary style2">Сбросить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-8">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="shop-grid-page-top-info p-0 justify-content-md-between justify-content-center">
+                                <div class="left-box wow fadeInUp animated"
+                                     th:if="${(not #lists.isEmpty(purchases)) or (not #lists.isEmpty(rating))}">
+                                    <p th:if="${purchases != null}">Найдено <b>
+                                        <span data-th-data-count="${#lists.size(purchases)}" id="allCount"
+                                              data-th-text="${#lists.size(purchases)}"></span></b>
+                                        <span> совпадение(ний)</span>
+                                    </p>
+                                    <p th:if="${rating != null}">Найдено <b><span
+                                            data-th-text="${' ' + #lists.size(rating) + ' совпадение(ний)'}"></span></b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <table class="compare-table" th:if="${(purchases != null) and (not #lists.isEmpty(purchases))}">
+                            <thead class="compare-header">
+                            <tr>
+                                <th>
+                                    <h5>Дата</h5>
+                                </th>
+                                <th>
+                                    <h5>Менеджер</h5>
+                                </th>
+                                <th>
+                                    <h5>Должность</h5>
+                                </th>
+                                <th>
+                                    <h5>Магазин</h5>
+                                </th>
+                                <th>
+                                    <h5>Товар</h5>
+                                </th>
+                                <th>
+                                    <h5>Тип оплаты</h5>
+                                </th>
+                                <th>
+                                    <h5>Сумма заказа</h5>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody id="body-all">
+                            <tr data-th-each="purchase : ${purchases}">
+                                <td>
+                                    <p data-th-text="${purchase.purchaseDate}"></p>
+                                </td>
+                                <td>
+                                    <a style="all:unset;cursor:pointer;text-decoration:underline;"
+                                       data-th-href="@{/employees/{employeeId}(employeeId=${purchase.employeeId})}">
+                                        <p data-th-text="${purchase.employeeName}"></p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p data-th-text="${purchase.positionName}"></p>
+                                </td>
+                                <td>
+                                    <a style="all:unset;cursor:pointer;text-decoration:underline;"
+                                       data-th-href="@{/shops/{shopId}(shopId=${purchase.shopId})}">
+                                        <p data-th-text="${purchase.shopName + ' ' + purchase.shopAddress}"></p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p data-th-text="${purchase.productName}"></p>
+                                </td>
+                                <td>
+                                    <p data-th-text="${purchase.purchaseTypeName}"></p>
+                                </td>
+                                <td>
+                                    <p>[[${#numbers.formatInteger(purchase.amount,3,'WHITESPACE')}]] ₽</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="compare-table" th:if="${(rating != null) and (not #lists.isEmpty(rating))}">
+                            <thead class="compare-header">
+                            <tr>
+                                <th>
+                                    <h5 data-th-text="${param.report != null and #arrays.contains(param.report, 'shop-rating') ? 'Наименование' : 'Менеджер'}"></h5>
+                                </th>
+                                <th>
+                                    <h5 data-th-text="${param.report != null and #arrays.contains(param.report, 'shop-rating') ? 'Адрес' : 'Должность'}"></h5>
+                                </th>
+                                <th>
+                                    <h5 th:if="${view == null or view == 'amount'}">Сумма проданных товаров</h5>
+                                    <h5 th:if="${view == 'count'}">Количество проданных товаров</h5>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr data-th-each="item : ${rating}">
+                                <td th:if="${param.report != null and #arrays.contains(param.report, 'shop-rating')}">
+                                    <a style="all:unset;cursor:pointer;text-decoration:underline;"
+                                       data-th-href="@{/shops/{shopId}(shopId=${item.id})}">
+                                        <p data-th-text="${item.name}"></p>
+                                    </a>
+
+                                </td>
+                                <td th:if="${param.report != null and #arrays.contains(param.report, 'rating')}">
+                                    <a style="all:unset;cursor:pointer;text-decoration:underline;"
+                                       data-th-href="@{/employees/{employeeId}(employeeId=${item.id})}">
+                                        <p data-th-text="${item.name}"></p>
+                                    </a>
+                                </td>
+                                <td th:if="${param.report != null and #arrays.contains(param.report, 'shop-rating')}">
+                                    <a style="all:unset;cursor:pointer;text-decoration:underline;"
+                                       data-th-href="@{/shops/{shopId}(shopId=${item.id})}">
+                                        <p data-th-text="${item.additionalName}"></p>
+                                    </a>
+                                </td>
+                                <td th:if="${param.report != null and #arrays.contains(param.report, 'rating')}">
+                                    <p data-th-text="${item.additionalName}"></p>
+                                </td>
+                                <td>
+                                    <p th:if="${view == null or view == 'amount'}">
+                                        [[${#numbers.formatInteger(item.total,3,'WHITESPACE')}]] ₽</p>
+                                    <p th:if="${view == 'count'}" data-th-text="${item.total + ' шт'}"></p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <section
+                                th:if="${(purchases != null and #lists.isEmpty(purchases)) or (rating != null and #lists.isEmpty(rating))}"
+                                class="faq-banner mb-120">
+                            <div class="container auto-container background pt-120 pb-120 position-relative">
+                                <div class="faq-banner-shape-1 d-lg-block d-none "><img
+                                        src="assets/images/shape/services-banner-shape-1.png" alt=""></div>
+                                <div class="faq-banner-shape-2 d-lg-block d-none "><img
+                                        src="assets/images/shape/services-banner-shape-2.png" alt=""></div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 text-center">
+                                        <div class="inner">
+                                            <h1>Совпадений не найдено</h1>
+                                            <p>Попробуйте изменить параметры поиска</p>
+                                            <a data-th-href="@{/purchases}" class="btn--primary style2 ">Сбросить
+                                                поиск</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+<footer class="footer-default footer-3 mt-30">
+    <div class="footer_bottom position-relative">
+        <div class="copyright wow fadeInUp animated" style="display: flex;justify-content: center;">
+            <p>Дмитрий Плотников - dmplo@mail.ru - 2024</p>
+        </div>
+    </div>
+</footer>
+<script th:inline="javascript">
+    let currentPage = [[${currentPage}]];
+    let totalPages = [[${totalPages}]];
+    let loadPage = false;
+
+    let select = document.querySelector('.rating-select')
+
+    let inputs = document.querySelectorAll('.position-input')
+
+    document.getElementById(`all`).addEventListener('click', (el) => {
+        if (select) {
+            select.disabled = true
+        }
+        if (inputs.length) {
+            inputs.forEach(el => {
+                el.disabled = false
+                el.parentNode.style.backgroundColor = 'white';
+            })
+        }
+    })
+
+    document.getElementById(`shop-rating`).addEventListener('click', () => {
+        if (select) {
+            select.disabled = false
+        }
+        if (inputs.length) {
+            inputs.forEach(el => {
+                el.disabled = true
+                el.checked = false
+                el.parentNode.style.backgroundColor = 'lightgray';
+            })
+        }
+    })
+
+    document.getElementById(`rating`).addEventListener('click', () => {
+        if (select) {
+            select.disabled = false
+        }
+        if (inputs.length) {
+            inputs.forEach(el => {
+                el.disabled = false
+                el.parentNode.style.backgroundColor = 'white';
+            })
+        }
+    })
+
+    window.onscroll = () => {
+        const el = document.documentElement
+        let body = document.body,
+            html = document.documentElement;
+        let height = Math.max(body.scrollHeight, body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const isBottomOfScreen = el.scrollTop + window.innerHeight >= height * 0.75
+        if (isBottomOfScreen && !loadPage) {
+            loadPageActionProducts()
+        }
+    }
+
+    function prepareUrl() {
+        const reg = /page+\=([0-9]+)/gi;
+        let page = `page=${currentPage + 1}`
+        let currentLocation = window.location
+        let url
+        if (!currentLocation.search) {
+            url = `${currentLocation.pathname}/pageable?${page}`
+        } else {
+            if (currentLocation.search.match(reg) !== null) {
+                url = `${currentLocation.pathname}/pageable${currentLocation.search.replace(reg, `${page}`)}`
+            } else {
+                url = `${currentLocation.pathname}/pageable${currentLocation.search}&${page}`
+            }
+        }
+        return url
+    }
+
+    async function loadPageActionProducts() {
+        if ((currentPage + 1 < totalPages) && !loadPage) {
+
+            let url = prepareUrl()
+            loadPage = true
+            send(url).then(response => {
+                fillTable(response)
+            });
+        }
+    }
+
+    function fillTable(response) {
+        currentPage = response.currentPage
+        totalPages = response.totalPages
+        let countEl = document.getElementById(`allCount`);
+        if (countEl) {
+            let total = parseInt(countEl.dataset.count) + parseInt(response.purchasesDTO.length)
+            countEl.innerText = total
+            countEl.dataset.count = total
+        }
+        let content = ''
+        response.purchasesDTO.forEach(purchase => {
+            content += `
+            <tr>
+                <td>
+                    <p>${purchase.purchaseDate}</p>
+                </td>
+                <td>
+                    <a style="all:unset;cursor:pointer;text-decoration:underline;" href="/employees/${purchase.employeeId}">
+                        <p>${purchase.employeeName}</p>
+                    </a>
+                </td>
+                <td>
+                    <p>${purchase.positionName}"</p>
+                </td>
+                <td>
+                    <a style="all:unset;cursor:pointer;text-decoration:underline;" href="/shops/${purchase.shopId}">
+                        <p>${purchase.shopName} ${purchase.shopAddress}</p>
+                    </a>
+                </td>
+                <td>
+                    <p>${purchase.productName}</p>
+                </td>
+                <td>
+                    <p>${purchase.purchaseTypeName}</p>
+                </td>
+                <td>
+                    <p>${purchase.amount.toLocaleString()} ₽</p>
+                </td>
+            </tr>
+    `
+        })
+        document.getElementById(`body-all`).insertAdjacentHTML("beforeend", content);
+        setTimeout(() => {
+            loadPage = false
+        }, 1000);
+    }
+
+    async function send(url) {
+        try {
+            const response = await fetch(url)
+            return await response.json()
+        } catch (error) {
+            showError(error)
+        }
+    }
+
+    function showError(error) {
+        console.log(error);
+    }
+</script>
+<script src="assets/js/jqurey.v3.6.0.min.js"></script>
+<script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

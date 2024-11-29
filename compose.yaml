@@ -1,0 +1,39 @@
+name: shop
+services:
+  postgres:
+    image: postgres:16
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: electroShopDb
+  eureka-server:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      args:
+        JAR_FILE: eureka-server/target/eureka-server-0.0.1-SNAPSHOT-exec.jar
+    ports:
+      - '8761:8761'
+  shop-rest:
+    restart: always
+    ports:
+      - '8081:8081'
+    depends_on:
+      - postgres
+      - eureka-server
+    build:
+      dockerfile: Dockerfile
+      args:
+        JAR_FILE: shop-rest/target/shop-rest-0.0.1-SNAPSHOT-exec.jar
+  shop-page:
+    restart: always
+    ports:
+      - '8080:8080'
+    depends_on:
+      - eureka-server
+    build:
+      dockerfile: Dockerfile
+      args:
+        JAR_FILE: shop-page/target/shop-page-0.0.1-SNAPSHOT-exec.jar
